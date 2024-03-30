@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top: 50px;
+	background-image: url(images/bk4.png);
+	background-size: 100% 100%;
+}
+
+.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+img.head{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 3%;
+    z-index: 10;
+    top:60px;
+}
+
+.hr{
+    position: relative;
+    width: 85%;
+    background: #fff;
+    height: 3px;
+    border: 2px solid #000;
+    left:9%;
+    z-index: 5;
+}
+
+div.button1{
+    width:84%;
+    position: relative;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+}
+
+
+button.button{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 30px;
+    width:10%;
+    margin-left: 3.5%;
+    height: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12%;
+    font-weight: 600;
+    background-size: cover;
+    background-image:url("images/p3.jpg") 
+}
+
+
+h5{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+}
+h6{
+    margin: 0;
+    font-size: 16px;
+}
+
+p.b{
+    margin: 0;
+}
+button:hover{
+    background-image: url("images/p2.jpeg");  
+}
+
+.word{
+    padding-top: 30px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-left:18%; 
+    width:1200px;
+    font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+    text-align: justify;
+}
+
+p.word1 {
+    text-align: center;
+	font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+}
+.word2 {
+	font-size: 36px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+}
+.word3 {
+	font-size: 48px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+.word4{
+    font-size: 28px;
+    font-weight: bolder;
+    text-indent : -4em ;
+}
+
+.word5{
+    text-indent : -4em ;
+    font-size:24px;
+}
+.word6{
+    text-indent : -2em ;
+    font-size:24px;
+}
+.w1{
+    margin-left: 30%;
+}
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h14{
+    padding-left:30px;
+}
+h15{
+    text-decoration: underline #333 ;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+ 
+    <div class="content">
+
+<div class="word">
+  <p class="word2"><h15>願景</h15></p>
+  <p class="word1">打造優質公共運輸系統之鐵道生活環境，在顧客滿意導向下，經營運輸本業及關聯事業之雙核心事業。 </p>
+  <p>&nbsp;</p>
+  <p class="word2"><h15>營運目標</h15></p>
+  <p  class="word1">以安全、準確、服務、創新、團結、榮譽為核心目標，並追求滿足旅客期待、引導國土空間發展、提升國家競爭力。 </p>
+  <p>&nbsp;</p>
+  <p class="word2"><h15>營運策略</h15></p>
+<div class="w1">
+  <p>1. 建構安全、快捷、準確、舒適、綠能的運輸環境。    </p>
+  <p>2. 營運設備智慧化、人性化、通用化、友善化及資訊化。    </p>
+  <p>3. 改善營運體質，健全財務結構。 </p>
+  <p>4. 發展關聯事業，勵行資產活化。    </p>
+  <p>5. 營造鐵道生活文創的特色，創造周邊效益與附加價值。</p>
+  <p> 6. 加強人才留用培育並積極推動國際合作交流。    </p>
+</div>
+  <p>&nbsp;</p>
+  <p class="word2"><h15>營運問題</h15></p>
+  <p class="word4">月台高度和列車落差:    </p>
+  <p>臺鐵各站的月台高度欠缺標準化，而各級列車因階梯高度不一，造成列車與月台間隙過大，旅客上下車容易跌倒。臺鐵將於2020年完成各車站月台高度統一為115公分。  </p>
+  <p class="word4">車站軟硬體設備老舊:  </p>
+  <p>臺鐵除了少數捷運化路線如沙崙線和六家線，大多數路線為傳統鐵路型態，部分車站設施嚴重老舊或缺失，例如仍有為數不少的三等站等級以下並未設有自動驗票閘門和升降梯；就連部分大站也因為預算有限，導致硬體設備無法如高鐵、捷運等鐵路系統齊全，甚至仍有為數不少無人看守之招呼站，造成治安上的隱憂。</p>
+  <p class="word4"> 列車誤點:</p>
+  <p>臺鐵的車種複雜、列車上下人潮多、又非全線獨立路權，因此準點率較高鐵或捷運為低。  </p>
+  <p class="word4">特級列車停靠站過多:</p>
+  <p>臺鐵特級列車停靠站多，由於臺鐵局為交通部附屬事業機構，預算由民意代表把持，民代常藉職務之便，以服務選民的名義，要求臺鐵將特級列車增停其選區車站，卻不諳該車站是通勤人口還是長途旅客居多及各車種座位數與地區民眾需求量；停靠站增加造成行車時間拉長，影響長途旅程的旅客，及增加營運成本造成虧損。</p>
+  <p>&nbsp;</p>
+  <p class="word2"> <h15>注意事項</h15></p>
+  <p class="word4">一、	每一旅客隨身攜帶物品其重量及體積限制如下：</p>
+  <p class="word5"> （一）、 每人最多可攜帶二件，且不得妨礙其他旅客，並應自行保管及照料。</p>
+  <p class="word5"> （二）、 每件長度不得超過一百五十公分，長、寬、高之和不得超過二百二十公分。但輪椅或本局公告之電動代步車不在此限。嬰兒推車經收納摺疊後，符合隨身物品尺寸者可攜帶乘車。</p>
+  <p class="word5"> （三）、 旅客隨身攜帶氣球，於進站前應放氣後乘車。</p>
+  <p class="word5"> （四）、旅客攜帶危險物品、屍體、屍骨、屍骨灰及腐臭不潔，或其他經政府或本局公告，對旅客、鐵路有危害或騷擾之虞之物品，不得進站乘車。</p>
+  <p class="word4"> 二、	每一旅客攜帶寵物限制如下：  </p>
+  <p class="word5">（一）、攜帶貓、狗、兔、魚蝦類等寵物裝入長四十三公分、寬三十二公分、高三十一公分以下之寵物箱、袋內，且包裝完固、無糞便漏出之虞，放置於座位下得攜帶乘車。</p>
+  <p class="word5"> （二）、前項寵物不包括鳥類、蛇類猛獸及有危害旅客或影響公共衛生之物種等。</p>
+  <p class="word5"> （三）、政府部門值勤犬及訓練犬、導盲犬、導聾犬、肢體輔助犬或導盲犬、導聾犬、肢體輔助犬專業訓練人員於執行訓練時帶同幼犬，及其他依法令規定得攜帶者。</p>
+  <p class="word4"> 三、	旅客攜帶自行車限制如下：  </p>
+  <p class="word5">（一）、旅客將自行車經收納完整，並置於包裝完整，無任一部分裸露之攜車袋（不得以其他塑膠袋或物品代替）內，尺寸符合隨身物品標準時，得免費攜帶乘車。但前述之自行車須置於不阻礙走道之空間，或本局指定之空間。辦理物品包裹運送車次者，亦不得置於行李車內。  </p>
+  <p class="word5">（二）、旅客攜帶前項自行車超過隨身物品尺寸、或攜帶無包裝或包裝不完整之自行車時，應改乘本局公告之指定班次列車，或至行李房辦理託運。改乘本局公告之指定班次列車時，應為其自行車支付所乘列車之全票五折票價。</p>
+  <p class="word4"> 旅客違反前項規定依下列規定辦理： </p>
+  <p class="word6">一、	危險物品：強制於最近停靠站下車，並退出車站範圍，如屬違法物品，並得移送警察機關偵辦，票款不予退還。  </p>
+  <p class="word6">二、	非屬隨身物品種類或超出隨身物品種類：於最近停靠站令其下車，並重新辦理託運，或拒絕運送。拒絕運送時，原票按退票規定辦理。  </p>
+  <p class="word6">三、	寵物：強制於最近停靠站下車並重新辦理託運，如次一停靠站無法辦理託運時，本局拒絕運送，原票按退票規定辦理。    </p>
+  <p class="word6">四、	自行車：除補收已乘區間之全票票價之違約金外，並終止運送契約，令其於最近之前方停靠站下車，原票按退票規定辦理。 </p>
+</div>
+
+
+    <img src="images/head2.png" class="head">
+    <div class="hr"></div>
+<div class="button1">
+   <a href="index2-1.html"><button class="button">基本介紹<br><h5>Basic Introduction</h5></button></a>
+  <a href="index2-2.html"><button class="button">火車樣式<br><h5>Train Type</h5></button></a>
+   <a href="index2-3.html"><button class="button">關於車票<br><h5>About Tickets</h5></button></a>
+   <a href="index2-4.html"><button class="button">車站等級<br><h5>Station Level</h5></button></a>
+   <a href="index2-5.html"><button class="button">車站介紹<br><h6>Station Introduction</h6></button></a>
+   <a href="index2-6.html"><button class="button">路線名稱<br><h5>Route Name</h5></button></a>
+   <a href="index2-7.html"><button class="button">好處壞處<br><h6>Advantages and Disadvantages</h6></button></a>
+
+</div>
+
+
+</div>
+  
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h14>台鐵網站:<a href="https://www.railway.gov.tw/tra-tip-web/tip" title="台鐵官網" target="blank">here</a></h14>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>

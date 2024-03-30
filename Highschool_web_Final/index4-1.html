@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top:100px;
+	background-image: url(images/bk4.png);
+	background-size: 100% 100%;
+}
+
+.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+img.head{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 3%;
+    z-index: 10;
+    top:60px;
+}
+
+.hr{
+    position: relative;
+    width: 85%;
+    background: #fff;
+    height: 3px;
+    border: 2px solid #000;
+    left:9%;
+    z-index: 5;
+}
+
+div.button1{
+    width:84%;
+    position: relative;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+}
+
+
+button.button{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 30px;
+    width:10%;
+    margin-left: 3.5%;
+    height: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12%;
+    font-weight: 600;
+    background-size: cover;
+    background-image:url("images/p3.jpg") 
+}
+
+
+h5{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+}
+h6{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+}
+h16{
+    margin: 0;
+    font-size: 16px;
+}
+
+p.b{
+    margin: 0;
+}
+button:hover{
+    background-image: url("images/p2.jpeg");  
+}
+
+.word{
+    padding-top: 30px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    margin-left:18%; 
+    width:1200px;
+    font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+    text-align: justify;
+}
+
+p.word1 {
+    text-align: center;
+	font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+}
+.word2 {
+	font-size: 36px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+}
+.word3 {
+	font-size: 48px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+.word4{
+    text-indent : 2em ;
+    font-size:24px;
+}
+.word5{
+    width:1000px;
+    text-align: justify;
+    margin-left: 38%;
+}
+.word6{
+    text-indent : -2em ;
+    font-size:24px;
+    margin-left: 2em;
+}
+.w1{
+    margin-left: 30%;
+}
+
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h14{
+    padding-left:30px;
+}
+h15{
+    text-decoration: underline #333 ;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+img.s25{
+    position: absolute;
+    margin-left:2%; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+ 
+    <div class="content">
+        <div class="word">
+            <p class="word2"><h15>票種與價錢</h15></p>
+            <p class="word4">單程票（單程票適用身分：大人、年滿6歲之兒童／敬老愛心優惠票適用對象：年滿65歲，持有身心障礙證明者及其必要陪伴者（限一人），滿55歲之臺北市原住民）:20元~65元、敬老愛心優惠票：全票之4折票價</p>
+            <p class="word4">旅遊票 :150~1,900不等，視票種而定 </p>
+            <p class="word4">定期票（票卡感應捷運車站驗票閘門或公車驗票機上即可自動啟用至第30日）:悠遊卡</p>
+            <p class="word4">電子票證:悠遊卡、一卡通、愛金卡、有錢卡（普通卡/聯名卡：普通卡100元）</p>
+            <p class="word4">其他票種</p>
+            <p class="word2"><h15>地理位置/路線圖</h15></p>
+            <img src="images/s24.jpg" width="600px" height="400px">
+            <img src="images/s25.jpg" width="600px" height="400px" class="s25">
+            <p class="word2"><h15>速度</h15></p>
+            <p class="word4">平均速度 高運量路線：35公里/小時文湖線：34公里／小時</p>
+            <p class="word4"> 最高速度	高運量路線：80公里/小時文湖線：70公里／小時</p>
+            <p class="word2"><h15>便利性</h15></p>
+            <p class="word4">因捷運在軌道上運行，不受地面交通干擾，尖峰時段可每二分鐘行駛一班，能大量運輸乘客，紓解道路交通的擁擠，使交通更順暢。</p>
+            <p class="word2"><h15>安全性</h15></p>
+            <p class="word4">旅客流量較高之車站裝設半罩式月台門，以防止旅客不慎跌入軌道，並提升整體的安全性。（鄭捷事件）</p>
+            <p class="word2"><h15>好處</h15></p>
+            <p class="word4">整潔；準時不誤點；準時；所有車站皆提供悠遊卡加值服務；免費wifi；票價便宜；班次密集、方便；有充電插座</p>
+            <p class="word2"><h15>壞處</h15></p>
+            <p class="word4">設站地點只在重點區域；設站成本高；噪音；施工期長（周邊居民難以生活）；未地下化之路段高壓電纜即在住家旁</p>
+            <p class="word2"><h15>注意事項</h15></p>
+            <p class="word4">營運時間為06:00~24:00；站內全區禁止吸煙，禁食區內禁止飲食及嚼食口香糖；寵物需放在寵物籠內；第一節及最後一節車廂，禁止使用大哥大；不可攜帶危險、易燃品</p>
+            <p class="word2"><h15>歷史</h15></p>
+            <p class="word6">(1) 全台灣第一座投入營運、規模最大的捷運系統。</p>
+            <p class="word6">(2) 為紓解大台北地區流量龐大的交通，改善都市機能、交通動線、以及縮短民眾們通勤的時間，使民眾們利用最短的時間與最少的金錢，達到目的。也可以藉由捷運系統的發展，促進台北市中心及周邊衛星市鎮的繁榮發展。由此可見，捷運系統它是現代化都市的象徵之一，亦可藉捷運系統提升交通運輸效能，並健全都市發展的重要途徑。目前台北捷運路網建設已達近120公里，每日平均載運量也達170餘萬人次，且服務品質更獲各界肯定。</p>
+            <p class="word6">(3) 台北市政府捷運工程局：1986年成立籌備處，至隔年7月，正式成立台北市政府捷運工程局。</p>
+            <p class="word6">(4) 台北捷運公司：1990年成立籌備處，至1994年7月，正式成立台北大眾捷運股份有限公司。</p>
+             <p class="word6"> (5) 1970年代以後，因大台北地區交通流量日益增大，加上台灣經濟持續發展，為紓解大台北地區流量龐大的交通、解決交通擁塞，故推動了台北捷運系統的實質計畫。</p>
+
+            
+
+
+        </div>
+            <img src="images/head2.png" class="head">
+            <div class="hr"></div>
+            <div class="button1">
+               <a href="index4-1.html"><button class="button">台北捷運<br><h5>Taipei MRT</h5></button></a>
+               <a href="index4-2.html"><button class="button">桃園捷運<br><h16>Taoyuan MRT</h16></button></a>
+               <a href="index4-3.html"><button class="button">台中捷運<br><h5>Taichung MRT</h5></button></a>
+               <a href="index4-4.html"><button class="button">高雄捷運<br><h5>Kaohsiung MRT</h5></button></a>
+               <a href="index4-5.html"><button class="button">捷運與輕軌<br><h6>MRT and light rail</h6></button></a>
+               <a href="index4-6.html"><button class="button">溫馨服務<br><h5>Warm Service</h5></button></a>
+               <a href="index4-7.html"><button class="button">安全設施<br><h16>Safety Facilities</h16></button></a>
+            </div>
+        
+</div>
+  
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h14>捷運網站:<a href="https://www.metro.taipei/cp.aspx?n=91974F2B13D997F1" target="_blank" title="捷運官網">here</a></h14>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>

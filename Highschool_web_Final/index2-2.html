@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top: 50px;
+	background-image: url(images/bk4.png);
+	background-size: 100% 100%;
+}
+
+.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+img.head{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 3%;
+    z-index: 10;
+    top:60px;
+}
+
+.hr{
+    position: relative;
+    width: 85%;
+    background: #fff;
+    height: 3px;
+    border: 2px solid #000;
+    left:9%;
+    z-index: 5;
+}
+
+div.button1{
+    width:84%;
+    position: relative;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+}
+
+
+button.button{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 30px;
+    width:10%;
+    margin-left: 3.5%;
+    height: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12%;
+    font-weight: 600;
+    background-size: cover;
+    background-image:url("images/p3.jpg") 
+}
+
+
+h5{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+}
+h6{
+    margin: 0;
+    font-size: 16px;
+}
+
+p.b{
+    margin: 0;
+}
+button:hover{
+    background-image: url("images/p2.jpeg");  
+}
+
+.word{
+    padding-top: 30px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-left:18%; 
+    width:1200px;
+    font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+    text-align: justify;
+}
+
+p.word1 {
+    text-align: center;
+	font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+}
+.word2 {
+	font-size: 36px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+}
+.word3 {
+	font-size: 48px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+.word4{
+    text-indent : 2em ;
+    font-size:24px;
+}
+.word5{
+    width:1000px;
+    text-align: justify;
+    margin-left: 38%;
+}
+.w1{
+    margin-left: 30%;
+}
+
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h14{
+    padding-left:30px;
+}
+h15{
+    text-decoration: underline #333 ;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+img.icon1{
+    width:80px;
+    height:80px;
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 20px;
+}
+img.icon2{
+    width:80px;
+    height:80px;
+    position: absolute;
+    margin-left: -80px;
+}
+img.icon3{
+    width:80px;
+    height:80px;
+    position: absolute;
+    margin-left: -80px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+ 
+    <div class="content">
+
+            <div class="word">
+                    <img src="images/icon.png" class="icon1">
+                    <p class="word3">對號列車 </p>
+                    <p class="word2"><h15>自強號一般列車</h15>    </p>
+                    <p class="word4">台鐵目前最高等級的列車，停站數最少，採用混合全車對號座與無座位乘車，可使用不劃座的車票、定期票、電子票證等票證搭乘，亦發售指定班次的無座票。1978年開始營運時以EMU100型電聯車運行，現以E1000型電力機車為主力，EMU1200型電聯車、EMU300型電聯車會擔當少許車班，而在需要行駛至非電氣化區間的路線則會使用柴聯自強號。    </p>
+                    <p class="word2"><h15>太魯閣號列車</h15></p>
+                    <p class="word4"> 編制屬自強號，但以投入營運時的名稱「太魯閣號」較為廣泛使用，全車對號座，不發售無座票，且限持當日當次車票搭乘，使用其他票證者禁止搭乘。 為台鐵向日本採購之TEMU1000傾斜式電聯車，也是台鐵首款傾斜式列車，主要行駛於東部幹線。    </p>
+                    <p class="word2"><h15>普悠瑪號列車</h15>    </p>
+                    <p class="word4">編制屬自強號，但以投入營運時的名稱「普悠瑪號」較為廣泛使用，全車對號座，不發售無座票，且須持當日當次車票搭乘，使用其他票證者禁止搭乘。 為台鐵向日本採購之TEMU2000傾斜式電聯車，主要行駛於東部幹線，並規劃以服務臺東縣對外交通為主。     </p>
+                    <p class="word2"><h15>莒光號列車</h15></p>
+                    <p class="word4">為臺鐵目前第二級的列車。部分車廂為過去的觀光號改造而來，部分則是將落地與車頂兩種冷氣機式復興號，及落地冷氣式的莒光重新改裝的自動門版本，1985年以後新造的車廂採用重新設計，將空調機改至車頂以增設車門，現在則因為車廂老舊（如手動開門式的莒光號）及西部幹線莒光號車速較慢，在2015年10月15日的改點後，將部份莒光號撤銷，或是使用EMU800型電聯車或EMU500所組成的區間快車取代並行駛。</p>
+                    <p class="word2"> <h15>復興號列車</h15></p>
+                    <p class="word4"> 復興號列車為臺鐵目前第三級的列車。1980年7月16日起於4列莒光號附掛冷氣對號客車（車票為莒光特快附掛對號）。1981年3月3日起正式行駛莒光復興混合編組（莒興號），7月1日起行駛2列，同月16日再加駛2列復興號。1984年第一批變色復興號SPK2200型問世，也首次將空調機搬上車頂。2010年12月22日之後曾一度停駛，至2011年4月8日起重新於東部幹線行駛部分車次，未來將全面退出營運。    </p>
+                    <img src="images/icon.png" class="icon2">
+                    <p class="word3">非對號列車    </p>
+                    <p class="word2"><h15>區間快車</h15></p>
+                    <p class="word4"> 區間快車於2006年11月開始營運，最初為莒光或復興號車廂編成，也曾有EMU700型電聯車行駛，現在僅有北迴線（宜蘭或羅東－花蓮區間）由EMU500型電聯車行駛，宜蘭線跨北迴線（樹林－花蓮區間）和縱貫線（臺中－二水或高雄區間）由EMU800型電聯車行駛之班次。臺鐵另於元旦、春節等運量較大的節日或假日期間，以對號方式開行新竹－臺北－宜蘭－花蓮半直達之區間快車，惟以復興號車種作訂票作業。 </p>
+                    <p class="word2"><h15>區間車</h15>    </p>
+                    <p class="word4">區間車於2006年11月起由原通勤電聯車、冷氣柴客及非對號復興號整併改制而來，採不對號座，沿途各站皆停。目前是營運班次最多的車種，已經運用至各客運路線，以服務通勤族群為主。一般電化區間使用EMU400、EMU500、EMU600、EMU700、EMU800電聯車，無電化區間幹線（如南迴線、屏東線）以柴電機車牽引冷氣空調車廂（原復興號車廂調用），或使用柴聯自強號，支線（如平溪線、深澳線、內灣線、集集線）使用DR1000型柴油客車。    </p>
+                    <p class="word2"><h15>普快車  </h15>  </p>
+                    <p class="word4">各站皆停之車種，2006年11月起原普通車、平快車、冷氣平快車、柴油客車統一改編為普快車。普通車及過去的平快車原已經退出縱貫線營運，2006年3月15日亦退出屏東線營運，2008年5月15日以後，普快車全面退出西部幹線及東部幹線的宜蘭線，其中冷氣平快車型將暫停使用，現僅於南迴線尚有無空調普快車行駛。    </p>
+                    <img src="images/icon.png" class="icon3">
+                    <p class="word3">速度:    </p>
+                    <p class="word5">自強號（普悠瑪）140KM/H    </p>
+                    <p class="word5">自強號（太魯閣／ＰＰ）130KM/H</p>
+                    <p class="word5"> 自強號（電車組）120KM/H </p>
+                    <p class="word5">自強號（柴聯車）110KM/H </p>
+                    <p class="word5">莒光號110KM/H～100KM/H</p>
+                    <p class="word5"> 莒光號（附掛行包車廂時）85KM/H </p>
+                    <p class="word5">復興號110KM/H～100KM/H </p>
+                    <p class="word5">區間車110KM/H </p>
+                    <p class="word5">普快車（柴油快）110KM/H</p>
+                    <p class="word5"> 普快車（平快車）100KM/H～85KM/H </p>
+                    <p class="word5">普快車（冷平快）85KM/H </p>
+                    <p class="word5">普快車（柴油普）105KM/H～70KM/H </p>
+                    <p class="word5">普快車（普通車）100KM/H～85KM/H </p>
+                  </div>
+                  
+
+
+    <img src="images/head2.png" class="head">
+    <div class="hr"></div>
+<div class="button1">
+   <a href="index2-1.html"><button class="button">基本介紹<br><h5>Basic Introduction</h5></button></a>
+  <a href="index2-2.html"><button class="button">火車樣式<br><h5>Train Type</h5></button></a>
+   <a href="index2-3.html"><button class="button">關於車票<br><h5>About Tickets</h5></button></a>
+   <a href="index2-4.html"><button class="button">車站等級<br><h5>Station Level</h5></button></a>
+   <a href="index2-5.html"><button class="button">車站介紹<br><h6>Station Introduction</h6></button></a>
+   <a href="index2-6.html"><button class="button">路線名稱<br><h5>Route Name</h5></button></a>
+   <a href="index2-7.html"><button class="button">好處壞處<br><h6>Advantages and Disadvantages</h6></button></a>
+
+</div>
+
+
+</div>
+  
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h14>台鐵網站:<a href="https://www.railway.gov.tw/tra-tip-web/tip" title="台鐵官網">here</a></h14>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>

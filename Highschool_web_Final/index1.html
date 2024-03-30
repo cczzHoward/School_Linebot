@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+
+
+<style>
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif ;
+    margin: 0;
+    height:100%;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+
+}
+
+div.container{
+    background-image:url("images/03.jpg");
+    width:100%;
+    background-size:cover;
+    margin: 0;
+}
+
+div.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td:nth-child(3){
+    padding-right: 190px;
+}
+
+td:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+img.pic{
+    position:absolute;
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+
+/* 定義卡片列 */
+div.cardRow{
+    margin-left: 3%;
+    margin-bottom:55px;	
+}
+
+
+/* 定義卡片 */
+div.card{ 
+    background: #fff;
+    width:30%;
+    height:460px;
+    box-sizing:border-box;
+    float:left; 
+    overflow:hidden;    
+    border:10px solid #fff;
+    border-radius: 30px;
+    box-shadow:0px 0px 2px 0px #000;       
+}
+
+/* 卡片標題 */
+div.card h3{  
+    padding:0 12px;
+    font-size:24px;
+}
+
+/* 卡片內文 */
+div.card p{   
+    padding:0px 12px 15px 12px;     
+    text-align:justify;
+    font-size:18px;
+    letter-spacing: 1px;
+}
+
+/* 第1, 2張卡片 */
+div.card:nth-child(1),
+div.card:nth-child(2){   
+    margin-right:50px;
+}
+
+div.card:hover{
+    position: relative;
+    top:-10px;
+}
+
+/*清除卡片區塊的浮動*/
+div.cardRow:after {      
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+div.news{
+    position: absolute;
+    width: 18%;
+    margin-left: 40%;
+    margin-right: 52%;
+    margin-top: -20px;
+}
+
+img.news{
+    position: absolute;
+    width: 3%;
+    margin-right: 59%;
+    margin-left: 36%;
+}
+
+div.post{
+    width: 80%;
+    height:440px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 130px;
+    background: #eee;
+    margin-bottom: 80px;
+}
+
+.button{
+    font-size: 22px;
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    width: 5%;
+    height: 15%;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 15%;
+    cursor:pointer;
+    border:none;
+    outline: none;
+}
+
+h1{
+    font-size: 35px;
+    width:50px;
+    height: 50px;
+    color:block;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    letter-spacing: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+hr{
+    width: 90%;
+    margin:0;
+    margin-left: 9%; 
+}
+
+h2{
+    font-size: 22px;
+    margin-left: 10%;
+    margin-top: -45px;
+    margin-bottom: 10px;
+}
+
+h2:hover{
+    cursor:pointer;
+}
+
+h4{
+    font-size: 18px;
+    margin-left: 92%;
+    margin-top: -35px;
+    margin-bottom: 13px;
+}
+
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h15{
+    padding-left:30px;
+}
+
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="images/logo-2.jpg" title="按我可以縮上去" class="pic">
+            
+                <table>
+                    <tr>                    
+                        <td class="left"><a href="index2.html" class="title" target="blank"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                        <td class="left"><a href="index3.html" class="title" target="blank"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                        <td class="left"><a href="index4.html" class="title" target="blank"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                        <td class="left"><a href="index5.html" class="title" target="blank"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                        <td class="left"><a href="index6.html" class="title" target="blank"><p class="chi">介紹動機</p><br><p class="eng">Introduction motivation</p></a></li></td>
+                        <td class="left"><a href="index7.html" class="title" target="blank"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                    </tr>
+
+                </table>
+        </div>
+        
+        <div class="content">
+
+                <div class="cardRow">              
+                        <!-- 卡片(1) -->      
+                        <div class="card">
+                            <a href="index2.html" target="blank"><img src="images/bg1.png" title="火車" width="100%" height="300"></a>
+                            <h3>汽笛長鳴，川流不息一火車 </h3>    
+                            <p>臺灣鐵路由清朝時代開始興築，而後臺灣鐵路越來越發達，縱貫線完成後也進入火車柴油化，進入十大建設後進行西部幹線電氣化與東部鐵路幹線擴展，不僅......</p>
+                        </div>                                 
+                        
+                        <!-- 卡片(2) -->  
+                        <div class="card">
+                            <a href="index3.html" target="blank"><img src="images/bg2.jpg" title="高鐵" width="100%" height="300"></a>           
+                            <h3>風馳電掣，日行千里一高鐵 </h3>    
+                            <p>臺灣高鐵為臺灣首次採用民間興建營運後轉移模式（BOT模式）的公共工程，2016年將南港－台北站路段正式納入營運區間，象徵高鐵......</p>
+                        </div>                                 
+                        
+                        <!-- 卡片(3) -->  
+                        <div class="card">
+                            <a href="index4.html" target="blank"><img src="images/bg3.jpg" title="捷運" width="100%" height="300"></a>                  
+                            <h3>行動自如，悠閒自在一捷運 </h3>    
+                            <p>臺灣最早的捷運系統為臺北捷運，為臺灣目前規模最大的捷運系統，高雄、桃園、新北捷運相繼開通，而未來第五座系統臺中捷運將於2020年通車，由於......</p>
+                        </div>                               
+                    </div>  
+
+                    <img src="images/1.png" class="news">
+                    <div class="news">
+                        <h1>最</h1><h1>新</h1><h1>消</h1><h1>息</h1>                        
+                    </div>
+
+                    <div class="post">
+                        <input type="button" class="button" value="公告" ><h2><a href="https://www.railway.gov.tw/tra-tip-web/tip/tip009/tip911/newsDtl?newsNo=8ae4cabe6c8aae5e016c8ddd02bc1489" target="blank">勿聽信謠言涉及不法行為，如發現弊端或不法情事，請以書面提出檢舉</a></h2><h4>2019-8-14</h4><br><hr>
+                        <input type="button" class="button" value="公告"><h2><a href="https://www.railway.gov.tw/tra-tip-web/tip/tip009/tip911/newsDtl?newsNo=8ae4cac16c8578a9016c88867d400a7e" target="blank">新竹站公廁不只多元友善　鋼構玻璃帷幕撒落光影最迷人</a></h2><h4>2019-8-13</h4><br><hr>
+                        <input type="button" class="button" value="公告"><h2><a href="https://www.railway.gov.tw/tra-tip-web/tip/tip009/tip911/newsDtl?newsNo=8ae4cabd6c77c287016c842ef36e6f66" target="blank">慢行區間公告</a></h2><h4>2019-8-12</h4><br><hr>
+                        <input type="button" class="button" value="加班車"><h2><a href="https://www.railway.gov.tw/tra-tip-web/tip/tip009/tip911/newsDtl?newsNo=8ae4cabf6c3d3835016c5021a3f22bcf" target="blank">【臨時車】配合「2019貢寮海洋音樂祭」活動，指定日期列車增停【福隆站】與加開列車</a></h2><h4>2019-8-10</h4><br><hr>
+                        <input type="button" class="button" value="颱風"><h2><a href="https://www.railway.gov.tw/tra-tip-web/tip/tip009/tip911/newsDtl?newsNo=8ae4cabe6c6d75d0016c76762f7c157f"target="blank">台鐵局因應利奇馬颱風列車行駛資訊-第4發</a></h2><h4>2019-8-9</h4>
+                    </div>
+                    
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h15>台鐵網站:<a href="https://www.railway.gov.tw/tra-tip-web/tip" target="blank" title="台鐵官網">here</a></h15>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>   
+    <script src="js/jQueryRotate.js"></script>            
+    <script src="js/main.js"></script>   
+
+    
+</body>
+
+
+</html>

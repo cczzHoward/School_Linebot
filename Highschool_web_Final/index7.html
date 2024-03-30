@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    background-image: url("images/bk3.jpg");
+    background-size:cover; 
+    z-index: -1;
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    width:100%;
+    height: 100%;
+}
+
+.content{
+
+    height: 100%;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+
+p.b{
+    margin: 0;
+}
+
+ h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h15{
+    padding-left:30px;
+}
+
+p.train{
+    font-size: 40px;
+text-align: center;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+.test{
+    margin-bottom: 100px;
+    margin-top:200px;
+    margin-left: 460px;
+    width: 1000px;
+    height:auto;
+}
+p.con1{
+    margin-left: 10%;
+    font-size:16px;
+    text-align: justify;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+
+<div class="content">
+    <div class="test">
+           <p class="train">火車資料</p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E9%90%B5%E8%B7%AF" target="_blank">https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E9%90%B5%E8%B7%AF</a></p>
+           <p class="con1"><a href="https://www.railway.gov.tw/tra-tip-web/tip" target="_blank">https://www.railway.gov.tw/tra-tip-web/tip</a></p>
+           <p class="train">高鐵資料</p>
+           <p class="con1"><a href="https://www.thsrc.com.tw/tw/Article/ArticleContent/feb91116-8a73-46b7-a6b7-f115a3137ccf" target="_blank">https://www.thsrc.com.tw/tw/Article/ArticleContent/feb91116-8a73-46b7-a6b7-f115a3137ccf （車廂與座位）</a></p>
+           <p class="con1"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/caa6fac8-b875-4ad6-b1e6-96c2902d12a6" target="_blank">http://www.thsrc.com.tw/tw/Article/ArticleContent/caa6fac8-b875-4ad6-b1e6-96c2902d12a6　（票種）</a></p>
+           <p class="con1"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/743c51ac-124d-4b1a-a57b-1fd820848032" target="_blank">http://www.thsrc.com.tw/tw/Article/ArticleContent/743c51ac-124d-4b1a-a57b-1fd820848032　（票價）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E9%AB%98%E9%90%B5" target="_blank">https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E9%AB%98%E9%90%B5　（簡介）</a></p>
+           <p class="con1"><a href="https://m.thsrc.com.tw/tw/Article/ArticleContent/8d291a1a-90ba-4b0f-b4d5-db2a35d881f5" target="_blank">https://m.thsrc.com.tw/tw/Article/ArticleContent/8d291a1a-90ba-4b0f-b4d5-db2a35d881f5　（4T）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E8%87%BA%E5%8C%97%E8%BB%8A%E7%AB%99" target="_blank">https://zh.wikipedia.org/wiki/%E8%87%BA%E5%8C%97%E8%BB%8A%E7%AB%99 （高鐵台北站）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E6%A1%83%E5%9C%92%E7%AB%99" target="_blank">https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E6%A1%83%E5%9C%92%E7%AB%99 （高鐵桃園站）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E6%96%B0%E7%AB%B9%E7%AB%99" target="_blank">https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E6%96%B0%E7%AB%B9%E7%AB%99 （高鐵新竹站）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E5%8F%B0%E4%B8%AD%E7%AB%99" target="_blank">https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E5%8F%B0%E4%B8%AD%E7%AB%99 （高鐵台中站）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E5%8F%B0%E5%8D%97%E7%AB%99" target="_blank">https://zh.wikipedia.org/wiki/%E9%AB%98%E9%90%B5%E5%8F%B0%E5%8D%97%E7%AB%99 （高鐵台南站）</a></p>
+           <p class="train">捷運資料</p>
+           <p class="con1"><a href="https://www.metro.taipei/Default.aspx " target="_blank">https://www.metro.taipei/Default.aspx 台北捷運＜臺北大眾捷運股份有限公司＞（票種、價錢、路線圖、注意事項資料來源）</a></p>
+           <p class="con1"><a href="http://www.fgu.edu.tw/~94411002/TiapeiMrtSimple/01.htm" target="_blank">http://www.fgu.edu.tw/~94411002/TiapeiMrtSimple/01.htm＜台北捷運概述＞（歷史資料來源）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E5%8C%97%E6%8D%B7%E9%81%8B" target="_blank">＜維基百科＞（速度資料來源）</a></p>
+           <p class="con1"><a href="https://www.medicaltravel.org.tw/Article.aspx?a=155&l=1" target="_blank">https://www.medicaltravel.org.tw/Article.aspx?a=155&l=1＜Taiwan Medical Travel＞（注意事項資料來源）</a></p>
+           <p class="con1"><a href="https://news.ltn.com.tw/news/life/breakingnews/2365180" target="_blank">https://news.ltn.com.tw/news/life/breakingnews/2365180</a></p>
+           <p class="con1"><a href="https://www.epochtimes.com.tw/n249439/%E5%8C%97%E6%8D%B710%E5%A4%A7%E5%84%AA%E9%BB%9E-%E7%8B%82%E8%B4%8F%E5%90%84%E5%9C%8B%E5%9C%B0%E9%90%B5.html" target="_blank">https://www.epochtimes.com.tw/n249439/%E5%8C%97%E6%8D%B710%E5%A4%A7%E5%84%AA%E9%BB%9E-%E7%8B%82%E8%B4%8F%E5%90%84%E5%9C%8B%E5%9C%B0%E9%90%B5.html＜PChome個人新聞台＞＜自由時報＞＜大紀元＞（優缺點資料來源）</a></p>
+           <p class="con1"><a href="https://www.tymetro.com.tw/tymetro-new/tw/index.php" target="_blank">https://www.tymetro.com.tw/tymetro-new/tw/index.php＜桃園捷運＞（票種、票價、路線圖資料來源）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E6%A1%83%E5%9C%92%E6%8D%B7%E9%81%8B" target="_blank">https://zh.wikipedia.org/wiki/%E6%A1%83%E5%9C%92%E6%8D%B7%E9%81%8B＜維基百科＞（速度、歷史資料來源）</a></p>
+           <p class="con1"><a href="https://www.bigfang.tw/blog/post/tymetro-2019news " target="_blank">https://www.bigfang.tw/blog/post/tymetro-2019news ＜樂活的大方 旅遊玩樂學＞（便利性資料來源）</a></p>
+           <p class="con1"><a href="https://news.ltn.com.tw/news/life/breakingnews/2742739 " target="_blank">https://news.ltn.com.tw/news/life/breakingnews/2742739 ＜自由時報＞（安全性資料來源）</a></p>
+           <p class="con1"><a href="https://stillcarol.tw/tymetro-tips/ " target="_blank">https://stillcarol.tw/tymetro-tips/ ＜小若生活漫旅＞（好處資料來源）</a></p>
+           <p class="con1"><a href="https://www.plurk.com/p/m41w6c " target="_blank">https://www.plurk.com/p/m41w6c （壞處資料來源）</a></p>
+           <p class="con1"><a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B" target="_blank">https://zh.wikipedia.org/wiki/%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B ＜維基百科＞（速度資料來源）</a></p>
+           <p class="con1"><a href="https://www.google.com.tw/imghp?hl=zh-TW&tab=ri&authuser=0&ogbl " target="_blank">https://www.google.com.tw/imghp?hl=zh-TW&tab=ri&authuser=0&ogbl google圖片</a></p>
+
+        </div>
+
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h15>高鐵網站:<a href="https://www.thsrc.com.tw/index.html" target="_blank" title="高鐵官網">here</a></h15>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>

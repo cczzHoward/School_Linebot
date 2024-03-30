@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top: 50px;
+	background-image: url(images/bk4.png);
+	background-size: 100% 100%;
+}
+
+.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+img.head{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 3%;
+    z-index: 10;
+    top:60px;
+}
+
+.hr{
+    position: relative;
+    width: 85%;
+    background: #fff;
+    height: 3px;
+    border: 2px solid #000;
+    left:9%;
+    z-index: 5;
+}
+
+div.button1{
+    width:84%;
+    position: relative;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+}
+
+
+button.button{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 30px;
+    width:10%;
+    margin-left: 3.5%;
+    height: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12%;
+    font-weight: 600;
+    background-size: cover;
+    background-image:url("images/p3.jpg") 
+}
+
+
+h5{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+}
+h6{
+    margin: 0;
+    font-size: 16px;
+}
+
+p.b{
+    margin: 0;
+}
+button:hover{
+    background-image: url("images/p2.jpeg");  
+}
+
+.word{
+    padding-top: 100px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-left:18%; 
+    width:1200px;
+    font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+    text-align: justify;
+}
+
+p.word1 {
+    margin-left:15%;
+	font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+}
+.word2 {
+	font-size: 36px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+}
+.word3 {
+	font-size: 48px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+.word4{
+    font-size: 24px;
+    text-align: center;
+}
+.w1{
+    margin-left: 30%;
+}
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h14{
+    padding-left:30px;
+}
+h15{
+    text-decoration: underline #333 ;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+ 
+    <div class="content">
+
+            <div class="word">
+                    <p class="word2"><h15>特等</h15>    </p>
+                    <p class="word4">臺北、臺中、高雄、花蓮    </p>
+                    <p class="word2"><h15> 一等</h15>  </p>
+                    <p class="word1">縱貫線 (北段)：基隆、七堵、南港、松山、萬華、板橋、樹林、桃園、中壢、新竹、竹南 </p>
+                    <p class="word1">臺中線：苗栗、豐原 </p>
+                    <p class="word1">縱貫線 (南段)：彰化、員林、斗六、嘉義、新營、臺南、岡山、新左營 </p>
+                    <p class="word1">屏東線：屏東、潮州 </p>
+                    <p class="word1">宜蘭線：瑞芳、宜蘭、蘇澳新 </p>
+                    <p class="word1">臺東線：玉里、臺東 </p>
+                    <p class="word2"><h15> 二等</h15> </p>
+                    <p class="word1">  縱貫線 (北段)：八堵、汐止、鶯歌 </p>
+                    <p class="word1">台中線：新烏日 </p>
+                    <p class="word1">海岸線：大甲、台中港、沙鹿 </p>
+                    <p class="word1">縱貫線 (南段)：田中、二水、斗南、隆田、善化、永康、中洲、楠梓 </p>
+                    <p class="word1">屏東線：鳳山 </p>
+                    <p class="word1">宜蘭線：雙溪、羅東、冬山、蘇澳 </p>
+                    <p class="word1">北迴線：東澳、和平、新城 </p>
+                    <p class="word1">內灣線：竹東 </p>
+                    <p class="word2"><h15> 三等</h15>  </p>
+                    <p class="word1">縱貫線 (北段)：山佳、內壢、埔心、楊梅、富岡、湖口、新豐、竹北 </p>
+                    <p class="word1">海岸線：後龍、白沙屯、通霄、苑裡、清水、龍井、大肚、追分 </p>
+                    <p class="word1">臺中線：銅鑼、三義、后里、潭子、成功 </p>
+                    <p class="word1">縱貫線 (南段)：社頭、林內、大林、民雄、新市、保安、大湖、路竹、橋頭 </p>
+                    <p class="word1">屏東線：九曲堂、西勢、南州、林邊、枋寮 </p>
+                    <p class="word1">南迴線：加祿、枋野、大武、金崙、太麻里、知本 </p>
+                    <p class="word1">宜蘭線：四腳亭、猴硐、三貂嶺、福隆、頭城、礁溪、二結 </p>
+                    <p class="word1">北迴線：永樂、南澳、漢本、和仁、崇德、北埔 </p>
+                    <p class="word1">臺東線：吉安、志學、壽豐、鳳林、萬榮、光復、富源、瑞穗、東里、富里、池上、關山、瑞源、鹿野 </p>
+                    <p class="word1">花蓮臨港線：花蓮港 </p>
+                    <p class="word2"><h15> 簡易</h15>     </p>
+                    <p class="word1">縱貫線 (北段)：三坑、百福、五堵、汐科、浮洲、南樹林、北新竹、三姓橋</p>
+                    <p class="word1"> 臺中線：豐富、泰安、栗林、頭家厝、松竹、精武、五權、大慶、烏日 </p>
+                    <p class="word1">縱貫線 (南段)：大村、嘉北、水上、柳營、南科、大橋、仁德、左營、內惟、鼓山、三塊厝 </p>
+                    <p class="word1">屏東線：民族、科工館、正義、後庄、竹田 </p>
+                    <p class="word1">平溪線：平溪、菁桐 </p>
+                    <p class="word1">沙崙線：長榮大學</p>
+                    <p class="word1"> 臺東線：豐田、林榮新光</p>
+                    <p class="word1"> 縱貫線 (北段)：北湖、香山 </p>
+                    <p class="word1">縱貫線 (南段)：南靖、後壁、林鳳營</p>
+                    <p class="word1"> 屏東線：佳冬</p>
+                    <p class="word1"> 宜蘭線：大里、龜山 </p>
+                    <p class="word1">內灣線：竹中 </p>
+                    <p class="word1">海岸線：大山、新埔、日南</p>
+                    <p class="word1"> 臺中線：太原 </p>
+                    <p class="word1" >縱貫線 (南段)：花壇、美術館 </p>
+                    <p class="word1">南迴線：瀧溪、康樂 </p>
+                    <p class="word1">宜蘭線：貢寮、四城 </p>
+                    <p class="word1">北迴線：景美 </p>
+                    <p class="word1">臺東線：南平、三民、東竹、海端、山里 </p>
+                    <p class="word1">內灣線：九讚頭、內灣 </p>
+                    <p class="word1">六家線：六家 </p>
+                    <p class="word1">沙崙線：沙崙 </p>
+                    <p class="word1">平溪線：十分 </p>
+                    <p class="word1">集集線：濁水 </p>
+                    <p class="word2"><h15> 招呼:</h15>  </p>
+                    <p class="word1">縱貫線 (北段)：新富、崎頂
+                       海岸線：談文、龍港</p>
+                    <p class="word1"> 臺中線：造橋、南勢
+                      縱貫線 (南段)：永靖、石榴、石龜、拔林
+                      屏東線：六塊厝、歸來、麟洛、崁頂、鎮安、東海    </p>
+                    <p class="word1">南迴線：內獅、枋山 </p>
+                    <p class="word1">宜蘭線：暖暖、牡丹、石城、大溪、外澳、頂埔、中里、新馬 </p>
+                    <p class="word1">北迴線：武塔 </p>
+                    <p class="word1">臺東線：平和、大富、瑞和</p>
+                    <p class="word1">平溪線：大華、望古、嶺腳 </p>
+                    <p class="word1">內灣線：上員、榮華、橫山、合興、富貴 </p>
+                    <p class="word1">集集線：源泉、龍泉</p>
+                    <p class="word1">深澳線：海科館、八斗子 </p>
+                  </div>
+                  
+
+    <img src="images/head2.png" class="head">
+    <div class="hr"></div>
+<div class="button1">
+   <a href="index2-1.html"><button class="button">基本介紹<br><h5>Basic Introduction</h5></button></a>
+  <a href="index2-2.html"><button class="button">火車樣式<br><h5>Train Type</h5></button></a>
+   <a href="index2-3.html"><button class="button">關於車票<br><h5>About Tickets</h5></button></a>
+   <a href="index2-4.html"><button class="button">車站等級<br><h5>Station Level</h5></button></a>
+   <a href="index2-5.html"><button class="button">車站介紹<br><h6>Station Introduction</h6></button></a>
+   <a href="index2-6.html"><button class="button">路線名稱<br><h5>Route Name</h5></button></a>
+   <a href="index2-7.html"><button class="button">好處壞處<br><h6>Advantages and Disadvantages</h6></button></a>
+
+</div>
+
+
+</div>
+  
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h14>台鐵網站:<a href="https://www.railway.gov.tw/tra-tip-web/tip" title="台鐵官網">here</a></h14>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>

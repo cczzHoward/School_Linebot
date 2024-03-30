@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top:100px;
+	background-image: url(images/bk4.png);
+	background-size: 100% 100%;
+}
+
+.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+img.head{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 3%;
+    z-index: 10;
+    top:60px;
+}
+
+.hr{
+    position: relative;
+    width: 85%;
+    background: #fff;
+    height: 3px;
+    border: 2px solid #000;
+    left:9%;
+    z-index: 5;
+}
+
+div.button1{
+    width:84%;
+    position: relative;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+}
+
+
+button.button{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 30px;
+    width:10%;
+    margin-left: 3.5%;
+    height: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12%;
+    font-weight: 600;
+    background-size: cover;
+    background-image:url("images/p3.jpg") 
+}
+
+
+h5{
+    margin: 0;
+    margin-top: 30px;
+    font-size: 16px;
+}
+h6{
+    margin: 0;
+    margin-top: 30px;
+    font-size: 16px;
+}
+h16{
+    margin: 0;
+    font-size: 16px;
+}
+
+p.b{
+    margin: 0;
+}
+button:hover{
+    background-image: url("images/p2.jpeg");  
+}
+
+.word{
+    padding-top: 30px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    margin-left:18%; 
+    width:1200px;
+    font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+    text-align: justify;
+}
+
+p.word1 {
+    text-align: center;
+	font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+}
+.word2 {
+	font-size: 36px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+}
+.word3 {
+	font-size: 48px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+.word4{
+    text-indent : 2em ;
+    font-size:24px;
+}
+.word5{
+    width:1000px;
+    text-align: justify;
+    margin-left: 38%;
+}
+.w1{
+    margin-left: 30%;
+}
+
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h14{
+    padding-left:30px;
+}
+h15{
+    text-decoration: underline #333 ;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+ 
+    <div class="content">
+        <div class="word">
+            <p class="word4">
+                    台灣高鐵是台灣第一個採用民間興建營運後轉移模式（BOT模式）的公共工程，經營者：台灣高速鐵路股份有限公司，最高營運速度：南港 - 板橋：130 km/h、板橋 - 左營：300 km/h，車站數：12。路線長度：349公里。高鐵制服由白襯衫、亮眼的橘色背心和深藍色長褲、短裙亮相。</p>
+            <p class="word4">
+                台灣高鐵的營運策略以「4T」；運輸（Transportation）、科技 （Technology）、在地（Taiwan）及關懷（Touch）作為永續經營的元素，以追求長期利益為重點。於經濟面，高鐵縮短南北交通時間，亦藉由營運活動及服務促進在地與整體經濟發展；於社會面，高鐵提供高安全性交通工具，降低交通意外所產生的社會支出；於環境面，台灣高鐵兼顧舒適、便利以及低碳、低污染、高效率等特性，且透過結合綠建築降低車站公共空間的環境影響。</p>
+        </div>
+            <img src="images/head2.png" class="head">
+            <div class="hr"></div>
+            <div class="button1">
+               <a href="index3-1.html"><button class="button">基本介紹<br><h5>Basic Introduction</h5></button></a>
+               <a href="index3-2.html"><button class="button">無障礙服務<br><h16>Accessibility Service</h16></button></a>
+               <a href="index3-3.html"><button class="button">關於車票<br><h5>About Tickets</h5></button></a>
+               <a href="index3-4.html"><button class="button">各站特色<br><h5>Station Feature</h5></button></a>
+               <a href="index3-5.html"><button class="button">車廂與座位<br><h6>Car And Seat</h6></button></a>
+               <a href="index3-6.html"><button class="button">乘車須知<br><h5>Ride Knowledge</h5></button></a>
+               <a href="index3-7.html"><button class="button">好處壞處<br><h16>Advantages and Disadvantages</h16></button></a>
+            </div>
+        
+</div>
+  
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h14>高鐵網站:<a href="https://www.thsrc.com.tw/index.html" target="_blank" title="高鐵官網">here</a></h14>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>

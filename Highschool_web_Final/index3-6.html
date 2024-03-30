@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top:100px;
+	background-image: url(images/bk4.png);
+	background-size: 100% 100%;
+}
+
+.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+img.head{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 3%;
+    z-index: 10;
+    top:60px;
+}
+
+.hr{
+    position: relative;
+    width: 85%;
+    background: #fff;
+    height: 3px;
+    border: 2px solid #000;
+    left:9%;
+    z-index: 5;
+}
+
+div.button1{
+    width:84%;
+    position: relative;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+}
+
+
+button.button{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 30px;
+    width:10%;
+    margin-left: 3.5%;
+    height: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12%;
+    font-weight: 600;
+    background-size: cover;
+    background-image:url("images/p3.jpg") 
+}
+
+
+h5{
+    margin: 0;
+    margin-top: 30px;
+    font-size: 16px;
+}
+h6{
+    margin: 0;
+    margin-top: 30px;
+    font-size: 16px;
+}
+h16{
+    margin: 0;
+    font-size: 16px;
+}
+
+p.b{
+    margin: 0;
+}
+button:hover{
+    background-image: url("images/p2.jpeg");  
+}
+
+.word{
+    padding-top: 30px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    margin-left:18%; 
+    width:1200px;
+    font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+    text-align: justify;
+}
+
+p.word1 {
+    text-align: center;
+	font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+}
+.word2 {
+	font-size: 36px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+}
+.word3 {
+	font-size: 48px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+.word4{
+    text-indent : 2em ;
+    font-size:24px;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+.word5{
+    width:1000px;
+    text-align: justify;
+    margin-left: 38%;
+}
+.word6{
+    font-size:28px;
+    font-weight: bolder; 
+}
+.w1{
+    margin-left: 30%;
+}
+
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h14{
+    padding-left:30px;
+}
+h15{
+    text-decoration: underline #333 ;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+ 
+    <div class="content">
+            <div class="word">
+                <p class="word2"><h15>乘車及票券</h15></p>
+                <p class="word4">車票請妥善保存，除記名回數票或定期票得依相關規定辦理掛失外，不受理補發或退費；退、換票需在指定期間前辦理。</p>
+                <p class="word4">持用優待票者應攜帶身分證明文件以供查驗，經查驗身分不符或未帶證件者，將補收票價差額，並得加收票價差額50%違約金。（未滿十二歲者適用孩童票；年滿六十五歲以上者適用敬老票；持有身心障礙手冊之國民及其必要之陪伴者一人適用愛心票） ※持新式身心障礙證明者，背面「必要陪伴者優惠措施」欄依規定須註記有「國內大眾運輸工具」字樣，始提供陪伴者一人半價優惠。</p>
+                <p class="word4">對號座車票為當日當班次有效，自由座車票則限當日有效，敬請提早進入車站候車，並依車票記載之車次及車廂座位搭乘，未搭乘指定車次或改乘較高票價車廂種類者，將補收票價差額，並得加收票價差額50%違約金。</p>
+                <p class="word4">候車時，請勿超越黃色警戒線。列車即將到達前，月台的《列車接近警示燈》將會亮起。 若不慎掉落軌道，請躲入月台下待避空間並大聲呼救，其他人請立即按壓月台上緊急停車按鈕。</p>
+                <p class="word4">因可歸責本公司事由之列車遲延達三十分鐘以上，列車運行中斷、取消班次或購買有發布海上颱風警報之日起至解除海上颱風警報之日止之車票且未搭乘者，可自事實發生之日起一年內，持相關車票至高鐵各車站辦理退費或退票，免收手續費。</p>
+                <p class="word4">持票進出車站期間不得超過 3.5 小時，違反者將照章罰款。</p>
+                <p class="word6">乘車設備:</p>
+                <p class="word4">商務車廂：提供音樂廣播頻道，可向服務人員索取耳機聆聽。使用完畢請放置於座位前方置物袋或交還服務人員。</p>
+                <p class="word4">洗手間：為維持舒適的使用環境，請將使用過之衛生紙投入馬桶內。</p>
+                <p class="word4"> 哺乳室：各車站均設有哺乳室，歡迎有育嬰、集乳、哺乳需求之旅客使用。
+                        哺乳室內設有沙發、茶几、立燈、洗手檯及尿布更換台等，並提供冷熱飲用水。(目前列車上並無提供熱水服務，請於車站哺乳室完成所需服務。)
+                        哺乳室所提供之雜誌僅供參閱，請勿攜出。</p>
+                <p class="word2"><h15>旅客隨身物品 / 攜帶物</h15></p>
+                <p class="word6">攜帶物品長寬高限制:</p>
+                <p class="word4">旅客每人隨身攜帶物品，每件長度不得超過 150 公分，且長、寬、高之和不得超過 220 公分，且總重量不得超過 40 公斤。攜帶上車之物品應自行保管，本公司不負保管責任。物品須占用座位者，應依所搭乘列車及車廂支付全額票價金額。如係裝有動物之容器者，應依下列「攜帶動物乘車限制」規定辦理。</p>
+                <p class="word6">攜帶動物乘車限制:</p>
+                <p class="word4">高鐵範圍內（車站及列車），原則上不得攜帶動物進入，旅客若有攜帶犬、貓、龜、兔、魚蝦類，或經本公司同意之其他不妨害公共安全、公共衛生與公共安寧，無異味之動物，且完固包裝於長、寬、高尺寸小於 55 公分、45公分、38公分之容器內，無糞便、液體漏出之虞者。乘車期間旅客除不得將動物放出容器外，裝有動物的容器不得放置於座椅、餐桌、座位上方行李架或車廂內行李置放區，並需置放於本身座位前方自行照料，且每 1 位購票旅客僅限攜帶裝有動物的容器 1 件。（執行任務之警犬、導盲犬或由專業人員（訓練師）陪同之導盲幼犬不在此限）</p>
+                <p class="word6">嬰幼兒推車置放行李區需求:</p>
+                <p class="word4">如有嬰幼兒推車於收摺後有置放車廂行李區之需求，請於購票時主動告知售票人員， 以利座位安排，惟實際擺放位置仍需視行李區使用狀況而定。</p>
+                <p class="word6">腳踏車需折疊裝入車袋:</p>
+                <p class="word4">旅客可攜帶收摺後符合隨身攜帶物品長寬高限制之腳踏車搭乘高鐵，惟需收納於攜車袋並置放於高鐵各車廂前後端入口處之「大型行李置放空間」。</p>
+                <p class="word6">大型樂器佔座乘車:</p>
+                <p class="word4">符合攜帶物品尺寸及重量限制，且不佔座位者，得以一般隨身物品之方式攜帶上車；超過隨身物品規範，但其高度、寬度、長度未超過 200 公分、40 公分、70 公分者，應依旅客搭乘車廂等級購買一張對號座全額票價車票，以佔座方式攜帶並自行照料。</p>
+                <p class="word4">旅客依前項規定，經本公司允許攜帶之大型樂器，將劃位於列車行進方向對號座車廂之第一排座位。如旅客擬搭乘車次此類型座位均已售出時，應改搭後續車次之列車。</p>
+                <p class="word6">禁止攜帶危險物品、無煞車之手推車、氣球、鳥禽類動物:</p>
+                <p class="word4">禁止攜帶易爆炸／易燃／高揮發性／放射性／具毒性／氧化／腐蝕性／具傳染性／具攻擊性物品／壓縮氣體（醫療用途除外)
+                    </p>
+                <p class="word2"><h15>乘車禮儀</h15></p>
+                <p class="word4">禁止在列車內吸菸，並請勿嚼食檳榔。</p>
+                <p class="word4"請勿在列車內食用味道過重之食物。></p>
+                <p class="word4">請勿大聲喧嘩，手機請轉為震動，輕聲細語或請至列車通道處使用。</p>
+                
+        </div>
+            <img src="images/head2.png" class="head">
+            <div class="hr"></div>
+            <div class="button1">
+               <a href="index3-1.html"><button class="button">基本介紹<br><h5>Basic Introduction</h5></button></a>
+               <a href="index3-2.html"><button class="button">無障礙服務<br><h16>Accessibility Service</h16></button></a>
+               <a href="index3-3.html"><button class="button">關於車票<br><h5>About Tickets</h5></button></a>
+               <a href="index3-4.html"><button class="button">各站特色<br><h5>Station Feature</h5></button></a>
+               <a href="index3-5.html"><button class="button">車廂與座位<br><h6>Car And Seat</h6></button></a>
+               <a href="index3-6.html"><button class="button">乘車須知<br><h5>Ride Knowledge</h5></button></a>
+               <a href="index3-7.html"><button class="button">好處壞處<br><h16>Advantages and Disadvantages</h16></button></a>
+            </div>
+        
+</div>
+  
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h14>高鐵網站:<a href="https://www.thsrc.com.tw/index.html" target="_blank" title="高鐵官網">here</a></h14>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>

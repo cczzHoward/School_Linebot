@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>軌道奔馳中</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookblock.css" rel="stylesheet" />
+<link href="css/demo1.css" rel="stylesheet" />
+<link href="css/my.bookblock.css" rel="stylesheet" />
+
+<style>
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body,html{
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0;
+    height:100%;
+}
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.header{
+    background:rgb(209, 231, 241);
+    height: 130px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top: 50px;
+	background-image: url(images/bk4.png);
+	background-size: 100% 100%;
+}
+
+.content{
+    height:100%;
+    padding-top: 200px;
+}
+
+table.on{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+tr.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td.left:nth-child(3){
+    padding-right: 190px;
+}
+
+td.left:nth-child(2){
+    padding-top: 18px;
+    line-height: 20px;
+}
+a:link{
+    text-decoration: none;
+    color:#333;
+    font-weight:1000;
+}
+
+a:visited{
+    color:#333;
+}
+
+a.title:hover{
+    position: relative;
+    top:-10px;
+}
+
+
+div.hover1{position: relative;}
+
+div.hover1 img{
+    left:50%;
+    margin-left: -65px;		
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+    top: 70px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+div.hover1 img:nth-of-type(2):hover{
+  opacity:0;
+}
+
+/* 定義logo圖示(滑鼠移入) */
+div.header img.pic:hover{
+    cursor:pointer;
+}
+p.chi{
+    font-size: 40px;
+}
+
+p.eng{
+    margin-top: -40px;
+}
+
+p.text{
+    margin-top: -20px;
+}
+div.footer{
+    width:100%;
+    height: 80px;
+    background: rgb(209, 231, 241);
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+p.last1{
+    margin: 0;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+img.head{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 3%;
+    z-index: 10;
+    top:60px;
+}
+
+.hr{
+    position: relative;
+    width: 85%;
+    background: #fff;
+    height: 3px;
+    border: 2px solid #000;
+    left:9%;
+    z-index: 5;
+}
+
+div.button1{
+    width:84%;
+    position: relative;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+}
+
+
+button.button{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 30px;
+    width:10%;
+    margin-left: 3.5%;
+    height: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12%;
+    font-weight: 600;
+    background-size: cover;
+    background-image:url("images/p3.jpg") 
+}
+
+
+h5{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+}
+h6{
+    margin: 0;
+    font-size: 16px;
+}
+
+p.b{
+    margin: 0;
+}
+button:hover{
+    background-image: url("images/p2.jpeg");  
+}
+
+.word{
+    padding-top: 30px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-left:18%; 
+    width:1200px;
+    font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+    text-align: justify;
+}
+
+p.word1 {
+    text-align: center;
+	font-size: 24px;
+    font-family: 'cwTeXYen', sans-serif;
+	color: #333;
+}
+.word2 {
+	font-size: 36px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+}
+.word3 {
+	font-size: 48px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+.word4{
+    font-size: 24px;
+    text-indent : 2em ;
+}
+
+
+.w1{
+    margin-left: 30%;
+}
+h8{
+    padding-left: 30px;
+}
+h9{
+    padding-left: 30px;
+}
+h10{
+    padding-left: 30px;
+}
+h11{
+    padding-left: 30px;
+}
+h12{
+    padding-left: 30px;
+}
+h13{
+    padding-left: 30px;
+}
+h14{
+    padding-left:30px;
+}
+h15{
+    text-decoration: underline #333 ;
+}
+a.foot:hover{
+    color: rgba(182, 42, 42, 0.459);
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+    <div class="header">
+            <div class="hover1">
+                    <a href="index1.html"><img  src="images/logo-1.png" title="回首頁">              
+                    <img  src="images/logo-2.jpg" title="回首頁"></a></div>
+            <table class="on">
+                <tr class="title">                    
+                    <td class="left"><a href="index2.html" class="title"><p class="chi">火車介紹</p><br><p class="eng">Train Introduction</p></a></li></td>
+                    <td class="left"><a href="index3.html" class="title"><p class="chi">高鐵介紹</p><br><p class="eng">High-speed Rail<p class="text">Introduction</p></p></a></li></td>
+                    <td class="left"><a href="index4.html" class="title"><p class="chi">捷運介紹</p><br><p class="eng">MRT Introduction</p></a></li></td>
+                    <td class="left"><a href="index5.html" class="title"><p class="chi">團隊介紹</p><br><p class="eng">Team Introduction</p></a></li></td>
+                    <td class="left"><a href="index6.html" class="title"><p class="chi">介紹動機</p><br><p class="eng">Introduction Motivation</p></a></li></td>
+                    <td class="left"><a href="index7.html" class="title"><p class="chi">參考資料</p><br><p class="eng">Reference Material</p></a></li></td>
+                </tr>
+            </table>
+    </div>
+ 
+    <div class="content">
+
+            <div class="word">
+                    <p class="word2"><h15>台北車站</h15>    </p>
+                    <p class="word4">位於臺灣臺北市中正區，為臺鐵、台灣高鐵、臺北捷運的地下化鐵路車站，同時是與桃園機場捷運共站的車站；周邊則有臺北轉運站、國光客運臺北車站等公共汽車站點。不但是臺北都會區與北臺灣首要的公共運輸樞紐，也是全臺灣運量最大的鐵路車站，每日進出人次約50萬以上[6]，長期穩坐台鐵各車站總運量首位，總使用人次則居於全球第25名。 臺北車站常被俗稱為「臺北火車站」，臺語則稱為「臺北火車頭」或「臺北車頭」，捷運上之廣播為「臺北車站」，雙北市居民則常稱為「北車」。2018年夏季臺北捷運於部分車站新增日本語到站廣播，本站以「臺北駅」廣播。
+                      臺北車站於1891年（清光緒17年）10月20日設站，歷經多次遷移與改建後，現今站體啟用於1989年9月2日，臺灣鐵路管理局本部也設於此；隨著臺北捷運、台灣高鐵進駐之後，形成幅員廣闊的地下街區。車站周邊有商辦、補習班聚集的臺北站前商圈，若再連結臺北轉運站、捷運北門站、華山特區等周圍之「臺北車站特定區」設施，面積可達46.31公頃。    </p>
+                    <p class="word2"><h15>桃園車站</h15>    </p>
+                    <p class="word4">位於台灣桃園市桃園區，臺灣鐵路管理局縱貫線基隆車站起點57.503公里處，為臺灣鐵路管理局縱貫線的一等站，旅客進出人次全國第二名，僅次於台北車站，每日往返台北的通勤旅客極多。因路線進行立體化工程，桃園車站目前使用的站房為臨時站房，總樓地板面積約1萬1917平方公尺，建造經費新臺幣4.6億元；未來桃園捷運綠線、棕線計畫將與立體化完成後的本站共構。</p>
+                    <p class="word2"> <h15>台中車站</h15></p>
+                    <p class="word4">為臺灣鐵路管理局臺中線的鐵路車站，新站體座落於臺中市東區新庄里、唯地址仍登錄舊站之中區綠川里，附近有多家公路客運、國道客運業者設站，多數市區公車路線亦於此處停靠，是臺中都會區極為重要的交通轉運樞紐。現今站房屋頂構造外型貌似蝴蝶展翅，頂樓高37公尺，約12層樓高，是台灣鐵路系統的車站中最高的鐵路車站。</p>
+                    <p class="word2"> <h15>高雄車站</h15>    </p>
+                    <p class="word4">位於高雄市三民區，為臺灣鐵路管理局、高雄捷運的地下化鐵路車站。該站為臺鐵縱貫線南段、屏東線、高雄臨港線的連接點，為高雄市中心最重要的鐵路車站，也是高雄都會區與南臺灣首要的交通轉運樞紐，毗鄰的高雄公車站是多條高雄市公車路線的起始站，長途客運也在周邊設有據點或轉運站。現今的高雄車站站房是高雄市區鐵路地下化計畫中改建的地下化站體，2018年9月5日第一期工程完工高雄捷運進駐永久站體營運，台鐵則因勘驗進度落後而於一個月後的10月14日進駐營運。預定遷回原處成為地標及地下化站體的主要往南地面出入口，整體工程計畫於2023年完工，配合縱貫線雙軌和電氣化工程興建的原後站站房則直接被拆除。原前站站體和一月台間放置的鐵路電氣化殉職人員紀念碑、及原前站站前花圃裡的鯉魚形狀噴泉，目前均移至高雄鐵路地下化展示館 (原前站帝冠式站體) 旁暫放。另外台灣高鐵南延將研究沿台鐵路廊進高雄市區，並在高雄、鳳山與台鐵共站。 </p>
+                  </div>
+                  
+                  
+
+
+    <img src="images/head2.png" class="head">
+    <div class="hr"></div>
+<div class="button1">
+   <a href="index2-1.html"><button class="button">基本介紹<br><h5>Basic Introduction</h5></button></a>
+  <a href="index2-2.html"><button class="button">火車樣式<br><h5>Train Type</h5></button></a>
+   <a href="index2-3.html"><button class="button">關於車票<br><h5>About Tickets</h5></button></a>
+   <a href="index2-4.html"><button class="button">車站等級<br><h5>Station Level</h5></button></a>
+   <a href="index2-5.html"><button class="button">車站介紹<br><h6>Station Introduction</h6></button></a>
+   <a href="index2-6.html"><button class="button">路線名稱<br><h5>Route Name</h5></button></a>
+   <a href="index2-7.html"><button class="button">好處壞處<br><h6>Advantages and Disadvantages</h6></button></a>
+
+</div>
+
+
+</div>
+  
+<div class="footer">
+        <p class="last1">
+            <h7><a href="index2.html" class="foot">火車介紹</a></h7>
+            <h8><a href="index3.html" class="foot">高鐵介紹</a></h8>
+            <h9><a href="index4.html" class="foot">捷運介紹</a></h9>
+            <h10><a href="index5.html"class="foot">團隊介紹</a></h10>
+            <h11><a href="index6.html" class="foot">介紹動機</a></h11>
+            <h12><a href="index7.html" class="foot">參考資料</a></h12>
+            <h14>台鐵網站:<a href="https://www.railway.gov.tw/tra-tip-web/tip" title="台鐵官網">here</a></h14>
+            <h13>新竹高商聯絡方式:新竹市東區學府路128號(03)5722152</h13>
+        </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="js/jquerypp.custom.js"></script>     
+    <script src="js/jquery.bookblock.js"></script>  
+    <script src="js/my.jquery.bookblock.js"></script>  
+            
+</body>
