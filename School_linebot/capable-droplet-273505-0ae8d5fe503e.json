@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "capable-droplet-273505",
+  "private_key_id": "0ae8d5fe503e7f008a312126bb7fed5aa787a08e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCktEicwc5sgz+c\nxk1ywiTPv4v4x/0XJyuIxE9A2vJKeQXno5Iu/WLa0bm2/gKylVL3BL2S0dmbnE2c\nTzi7068DKVXjD2piZreGb41hGWi5M05imgazZsFR1ir84FpsGODGxXY0VvKiVwDE\nolxFvyVFHjXeATBaFLld+a+BzlXT7cL95W5JZCKCeEJtDXXWrt9lxMGqVJpwamBa\n8oosfOW9y10Ncvu6w+gfwS6h85wYvBmhgJ4eSru3ZTp0a0lOSqmDM1bVx2kuGGKD\npxzA+wmdgASgPOrjtaWGmMuMqPtSxxUgrL8tJOrYJFqXN0i8loDiUfjCKnwAcB4c\nQJGGjw7LAgMBAAECggEAG4pTy/ZyPF3T8LSN9b715dEbKB3UuZ7gni1pLSiPNBm5\nfYqx4m6XLYy9F5awv8jNRyXBR0AUuXrw1U6/51RVotsyE9YbjVmsnWugwdg8VR95\nn24u6aeocrUzmfYv2HxudX5GLilNyAxxQe/+KuFz63NKQZWETsPBXS/ng3aLjnSh\n4pxgBLJ1aGSCC/f+Ih9i+o+g0hE8aO/aoaqxVV4hx7+QVpFJrsN0s5vAIBAVIAfh\nV4bJUZe9LNL+PiT1jvy96ZQ7xiXnjvmIrUwPAdjqOW/Lehfk7+Lpl38od9rS/FHM\nl7f+3/fFaNsY8UuSpQKuAjy8ScCynF+bzXrWmMUmpQKBgQDgRbBmk+hrrWoCfIdE\nbkwLda/po2cYmwNTr58z96yrQyhzXgKkeOK+2jAIRwFOaYnkslIBQnbuIjX3JCU6\nnC52HebxdbemqRlqMtRvYooP8G+4dRxEV7vjYDb7I26b/RfFRUHiJyKdWt0Y0DkY\njUKhY/8eoFI2AaIDx4wXkZZSJwKBgQC8AUMdGxSG3Tvi+b03lYHQTnHziqWLaFMT\nCNrXZvJU8x+oZnrb7CdTjavhgOQwaRoK/fdtIqH9z01xkJrRSv/+r6QVnMK1/T5t\nHL8AEY0EsbNJzMmnbY02cUJt+tFYf5BuUbn5BbasvYVC6a72FZ+D2cmSRkPFiERW\n+T5xoFFYvQKBgESWq5NDiuJbf79Q7GGORe1/SZRvp9kLl2HhpRPUnFcoS9e0maRJ\nYDc0LVpqtMiRWF27935xIERF7DEwOb6KA1+WV4njEY6DysUC1JtYDJdBVjmYf1Ob\nbVfllgsKVAqaxclMHBEZHOn43wN2su+CTC1lkqGAMIRZzX3QalTO7qUjAoGBAI8f\n1tv9la7mFYVB4o7CPsU6Mv3Y+xYaIcRH5XI+aRXK0Lr+6WErcvTk0Ykm+pDwMmdT\n2F05FGGIw8hE8deLZT+aryvU31Z0qGWgkLeYpOaB8Z+pS4sul2Zu6seXPnBFDMsv\nZIjzlJIE5cJ+7DdjVsCluBKnc0iZ6Izdym/uQH9xAoGBAIRfjMyBy0rpudp5EuL0\nYaO08uurfHIAe8aaEGFa36F2KuT6kHH/UxGa8DGSvKPhasnnh6JKiu/89kOBrbn+\noLeFHGxCbI2R95n+YQ7b6PLeuCmqB8b7+BbIQ1XHjzHpVMraUSdVpGQBOGjtJWjP\nNtYpFMMBAg2sJbI1/QlRAlOO\n-----END PRIVATE KEY-----\n",
+  "client_email": "cofe-406@capable-droplet-273505.iam.gserviceaccount.com",
+  "client_id": "115894968640548340745",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cofe-406%40capable-droplet-273505.iam.gserviceaccount.com"
+}
